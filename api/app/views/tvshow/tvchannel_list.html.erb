@@ -1,0 +1,10 @@
+<panel class="panel-primary">
+	<div ng-repeat="tvchannel in tvchannels" class="showListingsWrapper">
+		<a href="/tvchannels/tvshows/{{tvchannel.service_id}}">
+			<div class="thumbnail">
+				<img alt="100%x200" src="http://img-w.zeebox.com/241x200/{{tvchannel.logo}}" style="width: 100%; display: block;"/>
+				<h4 class="tvShowBlock">{{tvchannel.channel_name}}</h4>
+			</div>
+		</a>
+	</div>
+</panel>

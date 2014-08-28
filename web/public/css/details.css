@@ -1,0 +1,81 @@
+table {
+	color: #fff;
+}
+	.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>t {
+		background-color: #1e1e1e;
+	}
+	.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+		border: none;
+	}
+
+.tvShowSchedule_Title {
+  text-align: left;
+}
+  #showDesc:hover {
+    cursor: pointer;
+  }
+  #showDescCopy {
+    text-align: left;
+  }
+
+  #adSpace {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(238, 238, 238, 0.24);
+    border: 5px dotted rgba(14, 14, 14, 0.43);
+    margin-top: 10px;
+  }
+
+form.chatRoom { 
+  position: relative;
+  text-align: left;
+	position: fixed; 
+	bottom: 60px; 
+	width: 74%; 
+}
+  form.chatRoom input { 
+  	border: 0; 
+  	padding: 10px; 
+  	width: 80%; 
+  	/*margin-right: .5%; */
+  }
+  form.chatRoom button { 
+  	width: 10%; 
+  	background: rgb(130, 224, 255); 
+  	border: none; 
+  	padding: 10px; 
+  }
+  #messages { 
+    text-align: left;
+    height: 500px;
+    width: 100%;
+    background-color: #efefef;
+  	list-style-type: none; 
+  	margin: 0; 
+  	padding: 0;
+    overflow-y: scroll; 
+    font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  #messages li { 
+  	padding: 5px 10px; 
+    color: #333;
+  }
+    #messages li:nth-child(even) {
+      background-color: #fff;
+    }
+      .person1_name {
+        color: blue;
+        display: inline;
+        font-size: 1.5em;
+        font-weight: bolder;
+      }
+      .person2_name {
+        color: orange;
+        display: inline;
+        font-size: 1.5em;
+        font-weight: bolder;
+      }
+
+  #messages li:nth-child(odd) { 
+  	background: #eee;
+  }

@@ -1,0 +1,17 @@
+doctype
+html
+	head
+		link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
+		link(rel="stylesheet", href="/css/bootstrap.css")
+		link(rel="stylesheet", href="/css/home.css")
+		link(rel="stylesheet", href="/css/details.css")
+		link(rel="stylesheet", href="/css/tvshows.css")
+		link(rel="stylesheet", href="/vendor/toastr/toastr.css")
+		link(rel="stylesheet", href="/css/site.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+
+	body(ng-app='app')
+		include currentUser
+		block main-content
+		include scripts

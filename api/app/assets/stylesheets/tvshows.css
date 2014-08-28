@@ -1,0 +1,54 @@
+
+/*// doing this to force the col's to work at the ipad break point*/
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .twit_col {
+	float: left;
+}
+
+.col-md-3 {
+	width: 25%;
+}
+.col-md-9 {
+	width: 75%;
+}
+
+/*////////////////////////////////////////////// */
+
+.tvShowSchedule_Title {
+	margin: 10px 0;
+	color: #2c3e50;
+}
+
+#tvContentSwitch {
+	margin-top: 10px;
+}
+	#tvContentSwitch li {
+		padding-top: 10px;
+	}
+
+#TvShow_leftContent {
+	border-right: 1px solid #eee;
+	margin-right: 0px;
+}	
+	#TvShow_ScheduledContent {
+		
+	}
+
+.twit_col {
+	width: 32%;
+	font-size: .8em;
+}
+
+	.twit_col:nth-child(2) {
+		padding-right: 10px;
+	}
+
+	.twit_col:nth-child(3) {
+		width: 35%;
+		padding: 0 10px;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.twit_col:nth-child(4) {
+		padding-left: 10px;
+	}

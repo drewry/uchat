@@ -1,0 +1,10 @@
+<panel class="panel-primary">
+  <div ng-repeat="tvshow in tvshows" class="showListingsWrapper"><a href="/tvshows/{{tvshow._id}}">
+      <div class="thumbnail"><img alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDEiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQxIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMC41IiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNhYWE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LXNpemU6MTVweDtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4yNDF4MjAwPC90ZXh0Pjwvc3ZnPg==" style="width: 100%; display: block;"/>
+        <h4 class="tvShowBlock">{{tvshow.title}}</h4>
+        <div class="caption">
+          <p class="showDesc">{{tvshow.description}}</p>
+          <hr/><a href="/tvshows/{{tvshow._id}}" role="button" class="btn btn-sm btn-link">showtimes </a><a href="#" role="button" class="btn btn-sm btn-primary">community </a>
+        </div>
+      </div></a></div>
+</panel>

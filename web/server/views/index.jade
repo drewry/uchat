@@ -1,0 +1,25 @@
+extends ../includes/layout
+
+block main-content
+	//- #contntSwitch
+
+	section.content
+		div(ng-view)
+
+	//- footer.container.text-center
+	//- 	p &copy; 2014 U-chat
+
+	.navbar.navbar-inverse.navbar-fixed-bottom
+		.container
+			.navbar-header
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav.navbar-left
+					li
+						a(href="/") Home
+					li
+						a(href="/tvguide/tvchannels") TV Guide
+					li
+						a(href="/featured") Featured
+
+				div(class="navbar-right btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal")
+					| Login or Sign Up

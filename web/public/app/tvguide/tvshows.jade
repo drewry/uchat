@@ -1,0 +1,48 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-left
+        li
+          a#goBack(href="#") « Back
+
+panel.panel-primary
+  //- .panel-heading.text-center TV Show Listings Here
+  br
+  br
+  br
+  -var classes = ['tvShowBlock']
+  .showListingsWrapper(ng-repeat="tvshow in tvshows")
+    a(href="/tvguide/tvchannel/tvshow/event/{{tvshow.bce}}")
+      .thumbnail
+        img(alt="100%x200" src="http://img-w.zeebox.com/200x200/{{tvshow.img}}")
+        h4(class=classes) {{tvshow.title}}
+        .caption
+          //- p.showDesc {{tvshow.desc}}
+          //- hr
+          //- a(href="/tvshows/{{tvshow._id}}")(class="btn btn-sm btn-link" role="button")
+          //-   | showtimes
+          //- a(href="#")(class="btn btn-sm btn-primary" role="button")
+          //-   | community
+          //- //- a(href="#")(class="btn btn-sm btn-default" role="button")
+          //-   | <3
+  .clear
+  br
+  br
+  br
+  | &nbsp;
+          
+div(class="modal fade")(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")(id="myModal")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button(class="close" type="button" data-dismiss="modal")
+          span(aria-hidden="true")
+            | &times;
+        span.sr-only
+          | Close
+        h4(class="modal-title")(id="myModalLabel")
+          | Create an account or Log-in
+
+      .modal-body(ng-include="'/partials/account/navbar-login'")
+      .clear

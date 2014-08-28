@@ -1,0 +1,23 @@
+panel.panel-primary
+  //- .panel-heading.text-center TV Show Listings Here
+  -var classes = ['tvShowBlock']
+  .showListingsWrapper(ng-repeat="tvchannel in tvchannels")
+    a(href="/tvguide/tvchannel/tvshows/{{tvchannel.service_id}}")
+      .thumbnail
+        img(alt="100%x200" src="http://img-w.zeebox.com/241x200/{{tvchannel.logo}}" style="width: 100%; display: block;")
+        //- h4(class=classes) {{tvchannel.channel_name}}   
+               
+div(class="modal fade")(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")(id="myModal")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button(class="close" type="button" data-dismiss="modal")
+          span(aria-hidden="true")
+            | &times;
+        span.sr-only
+          | Close
+        h4(class="modal-title")(id="myModalLabel")
+          | Create an account or Log-in
+
+      .modal-body(ng-include="'/partials/account/navbar-login'")
+      .clear

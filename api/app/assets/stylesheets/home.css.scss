@@ -1,0 +1,74 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.clear {
+  clear: both;
+}
+
+#homeWrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*///////////////////////////////////////*/
+
+.starterRow {
+  margin: 0 auto;
+}
+
+.showListingsWrapper {
+  text-align: center;
+  width: 23%;
+  /*height: 150px;*/
+  margin: 5px;
+  /*border: 1px solid #eee;*/
+  display: inline-block;
+  /*			line-height: 150px;
+  		text-align: center;
+  		vertical-align: middle;	*/
+  &:hover {
+    background-color: #eee;
+    text-decoration: none;
+    border: none;
+    color: #2c3e50;
+    font-weight: bolder;
+  }
+}
+
+.showDesc {
+  color: #333;
+}
+
+.small {
+  display: block;
+  opacity: .2;
+  text-align: center;
+}
+
+.signupBtn {
+  width: 50%;
+  text-align: center;
+}
+
+/*// was messing with learning angular ng animations.. can delete later*/
+
+.randbomButton {
+  text-align: center;
+}
+
+.jumbotron:hover {
+  cursor: pointer;
+}
+
+.animate-hide {
+  /*transition: 1s linear all;*/
+  /*-webkit-transition: all ease-in-out .9s;*/
+  -webkit-transition-property: padding, opacity;
+  -webkit-transition-duration: .9s;
+  -webkit-transition-timing-function: ease-in-out;
+  /*	padding: 0px;
+  	height: 0px;*/
+  /*display: none;*/
+  padding: 0px;
+  opacity: 0;
+}

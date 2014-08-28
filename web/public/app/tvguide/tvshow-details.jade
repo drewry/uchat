@@ -1,0 +1,157 @@
+.navbar.navbar-inverse.navbar-fixed-top
+	.container
+		.navbar-header
+		.navbar-collapse.collapse
+			ul.nav.navbar-nav.navbar-left
+				li
+					a#goBack(href="#") « Back
+				li
+					a(href="#") |
+				li#showSchedule.tvDetailContentLinks
+					a(href="#") Today's Showings
+				li#showOnDemand.tvDetailContentLinks
+					a(href="#") On Demand
+				li#showTwitter.tvDetailContentLinks
+					a(href='#') Twitter Community
+				li#showChat.tvDetailContentLinks
+					a(href="#") Chat
+
+.clear
+.container#tvshowDetailsContainer
+
+	//- hero image & links to switch content
+	.row.col-md-3#TvShow_leftContent
+		img(src="http://img-w.zeebox.com/200x200/{{tvshowDetails.img}}")
+		h3 {{tvshowDetails.title}}
+		span#showDesc View Description »
+		p#showDescCopy {{tvshowDetails.desc}}
+		br
+		#adSpace
+
+	//- scheduled content area
+	.col-md-9#TvShow_ScheduledContent
+		.pull-left
+			h3.tvShowSchedule_Title Scheduled air times
+		.pull-right
+			form.form-inline
+				.form-group
+					input#scheduleSearch.form-control(ng-model="searchText", placeholder="Is it showing today?")
+				.form-group.margin-left-med
+		table.table.table-hover.table-striped.table-condensed
+			thead
+				tr
+					th Channel
+					th Network
+					th Time
+					th Description
+				tbody
+					tr(ng-repeat="airedByDetails in aired_by | filter:searchText | orderBy:sortOrder")
+						td {{aired_by_network_id}}
+						td {{airedByDetails.service_name}}
+						td {{tvshowEpisodeDetails.original_air_date}}
+						td {{tvshowDetails.desc}}
+
+	//- on demand content area
+	.col-md-9#TvShow_onDemandContent
+		.pull-left
+			h3.tvShowSchedule_Title On Demand Content
+		.pull-right
+			form.form-inline
+				.form-group
+					//- i'm sure this is going to cause issues with it being a pure clone of the 1st
+					input#onDemandSearch.form-control(ng-model="searchText", placeholder="Find a specific episode")
+				.form-group.margin-left-med
+		table.table.table-hover.table-striped.table-condensed
+			thead
+				tr
+					th Episode
+					th Description
+				tbody
+					tr(ng-repeat="TVShowInfo in aired_by | filter:searchText | orderBy:sortOrder")
+						td {{tvshowDetails.title}}
+						td {{tvshowDetails.desc}}
+
+	//- twitter content will be on the next page
+	.col-md-9#TvShow_twitterContent
+		h3.tvShowSchedule_Title
+			| Twitter Community Content
+
+		.twit_col
+			.lead
+				strong.show_title &num;{{tvshowEpisodeDetails.twitter_searches[0].hashtag}}
+				//- #hashtags for the tvshow
+			ul.media-list
+				li.media(ng-repeat="twitterData in tvshowTwitterData | orderBy:'user.url'")
+					a.pull-left(href='{{twitterData.user.url}}')
+						img.media-object(src='{{twitterData.user.profile_image_url}}')
+					.media-body
+						strong.media-heading {{twitterData.user.name}}
+						span.text-muted  {{twitterData.user.screen_name}}
+						p {{twitterData.text}}
+
+		.twit_col
+			.lead
+				strong.show_title @{{tvshowDetails.title}}
+				//-tweets to @tvshow_name & RT's they've published
+			ul.media-list
+				li.media(ng-repeat="twitterData in tvshowTwitterData3 | orderBy:'text'")
+					a.pull-left(href='{{twitterData.user.url}}')
+						img.media-object(src='{{twitterData.user.profile_image_url}}')
+					.media-body
+						strong.media-heading {{twitterData.user.name}}
+						span.text-muted  {{twitterData.user.screen_name}}
+						p {{twitterData.text}}
+		.twit_col
+			.lead
+				strong.show_title &num;{{tvshowDetails.episode_title}}
+				//-tweets from @tvshow_name & RT's they've published
+			ul.media-list
+				li.media(ng-repeat="twitterData in tvshowTwitterData2 | orderBy:'id'")
+					a.pull-left(href='{{twitterData.user.url}}')
+						img.media-object(src='{{twitterData.user.profile_image_url}}')
+					.media-body
+						strong.media-heading {{twitterData.user.name}}
+						span.text-muted  {{twitterData.user.screen_name}}
+						p {{twitterData.text}}
+
+	//- twitter content will be on the next page
+	.col-md-9#TvShow_chatContent
+		h3.tvShowSchedule_Title#Community
+			| {{tvshowDetails.title}} Chat Community
+		ul#messages
+			li.person1(ng-repeat="twitterData in tvshowTwitterData | orderBy:'id'")
+				.person1_name {{twitterData.user.name}}
+				| &nbsp; {{twitterData.text}}
+			li.person2(ng-repeat="twitterData in tvshowTwitterData | orderBy:'text'")
+				.person2_name {{twitterData.user.name}}
+				| &nbsp; {{twitterData.text}}
+		form.chatRoom(action="")
+			input(id="m", autocomplete="off")
+			button Send
+		
+	.clear
+	br
+	br
+	.clear
+	br
+	br
+	//- don't delete... may be useful to see which tags are associated with the show
+	//- .panel.panel-primary
+	//- 	.panel-heading Tags
+	//- 	.panel-body
+	//- 		div(ng-repeat="tag in tvshow.tags") {{tag}}
+
+	div(class="modal fade")(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")(id="myModal")
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button(class="close" type="button" data-dismiss="modal")
+						span(aria-hidden="true")
+							| &times;
+					span.sr-only
+						| Close
+					h4(class="modal-title")(id="myModalLabel")
+						| Create an account or Log-in
+
+				.modal-body(ng-include="'/partials/account/navbar-login'")
+				.clear

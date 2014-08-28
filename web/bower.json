@@ -1,0 +1,21 @@
+{
+  "name": "UChat",
+  "version": "0.0.0",
+  "description": "AT&T U-verse twitter client and chat.",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Carlos Gonzalez <carloslgonzalez.pr@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "toastr": "~2.0.3",
+    "angular": "~1.2.19",
+    "angular-resource": "~1.2.19",
+    "angular-route": "~1.2.19",
+    "bootstrap": "~3.2.0"
+  }
+}

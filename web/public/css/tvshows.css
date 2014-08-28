@@ -1,0 +1,73 @@
+
+/*// doing this to force the col's to work at the ipad break point*/
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .twit_col {
+	float: left;
+}
+
+.col-md-3 {
+	width: 25%;
+}
+.col-md-9 {
+	width: 75%;
+}
+
+/*////////////////////////////////////////////// */
+
+#tvshowDetailsContainer {
+	margin-top: 70px;
+}
+
+.tvShowSchedule_Title {
+	margin: 10px 0;
+	color: #fff;
+}
+
+#tvContentSwitch {
+	margin-top: 10px;
+	text-align: left;
+}
+	#tvContentSwitch li {
+		padding-top: 10px;
+		list-style-type: none;
+	}
+	#tvContentSwitch li a {
+		color: #000;
+	}
+		#tvContentSwitch li a:hover {
+			text-decoration: none;
+		}
+
+#TvShow_leftContent {
+	/*border-right: 1px solid #eee;*/
+	margin-right: 0px;
+}	
+	#TvShow_ScheduledContent {
+		
+	}
+
+.twit_col {
+	width: 32%;
+	font-size: .8em;
+	text-align: left;
+}
+	ul.media-list li {
+		padding: 5px;
+	}
+	ul.media-list li:nth-child(odd) {
+		background-color: #0D3754;
+	}
+
+	.twit_col:nth-child(2) {
+		padding-right: 10px;
+	}
+
+	.twit_col:nth-child(3) {
+		width: 35%;
+		padding: 0 10px;
+		/*border-left: 1px solid #000;*/
+		/*border-right: 1px solid #000;*/
+	}
+
+	.twit_col:nth-child(4) {
+		padding-left: 10px;
+	}

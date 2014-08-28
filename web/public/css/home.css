@@ -1,0 +1,147 @@
+html, body {
+  min-height: 100%;
+  background: linear-gradient(#02263F, #0D629C) center center fixed; /* Standard syntax */
+  /*background-size: cover;*/
+}
+
+body {
+  padding-top: 0px;
+  color: #fff;
+}
+
+.clear {
+	clear: both;
+}
+
+#homeWrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.modal-title {
+	color: #0e0e0e;
+}
+
+.content {
+  text-align: center;
+}
+
+.navbar-inverse {
+  background: linear-gradient(#878787, #000); /* Standard syntax */
+  margin: 0 auto;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+	color: #fff;
+}
+
+.navbar-header a.navbar-brand {
+  margin-top: -15px;
+  margin-bottom: -20px;
+}
+.navbar-header a.navbar-brand h6 {
+  color: #ccc;
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+footer p {
+  border-top: 1px solid #d7e0e2;
+}
+.navbar-form .form-group {
+  margin-left: 10px;
+}
+.top-padding-med {
+  padding-top: 10px;
+}
+.margin-left-med {
+  margin-left: 10px;
+}
+.toast-top-right {
+  top: 70px;
+}
+.toast-success {
+  background-color: #13987e;
+}
+
+.navbar-right.btn.btn-primary.btn-lg {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*///////////////////////////////////////*/
+
+.starterRow {
+	margin: 0 auto;
+}
+
+/* individual cards*/
+.showListingsWrapper {
+	text-align: center;
+}
+	.showListingsWrapper {
+		width: 200px;
+		margin: 18px;
+		display: inline-block;
+	}
+		.thumbnail {
+			background: radial-gradient(#1386D4, #000); 
+			box-shadow: 0px 0px 30px #000;
+			border: none;
+			color: #fff;
+			padding: 0px;
+		}
+			.thumbnail h4 {
+				padding: 5px 5px 0px 5px;
+				/*text-align: left;*/
+				color: #fff;
+				font-size: .9em;
+				font-weight: bolder;
+			}
+			a:hover .thumbnail, a .thumbnail:hover, .showListingsWrapper:hover, .showListingsWrapper a {
+				text-decoration: none !important;
+			}
+
+		.showDesc {
+			color: #fff;
+			text-align: left;
+			font-size: .8em;
+		}
+
+.small {
+	display: block;
+	opacity: .2;
+	text-align: center;
+}
+
+.signupBtn {
+	width: 50%;
+	text-align: center;
+}
+
+/*// was messing with learning angular ng animations.. can delete later*/
+.randbomButton {
+	text-align: center;
+}
+
+.jumbotron:hover {
+	cursor: pointer;
+}
+
+.animate-hide {
+	/*transition: 1s linear all;*/
+	/*-webkit-transition: all ease-in-out .9s;*/
+	-webkit-transition-property: padding, opacity;
+	-webkit-transition-duration: .9s;
+	-webkit-transition-timing-function: ease-in-out;
+/*	padding: 0px;
+	height: 0px;*/
+}
+
+.animate-hide {
+	/*display: none;*/
+	padding: 0px;
+	opacity: 0;
+}

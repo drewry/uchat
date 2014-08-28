@@ -1,0 +1,71 @@
+block content
+    br
+    script
+    a(href="/tvguide/tvchannel/tvshows/{{aired_by_network_id}}") « back
+    | &nbsp; &nbsp;| &nbsp;
+    a(href="/tvguide/tvchannels") TV Guide
+    br
+    br
+    .well.tvshow
+        form(role='form', method='POST')
+            input(type='hidden', name='_csrf', value=_csrf)
+            .form-group
+                input.form-control(type='text', name='tweet', placeholder='type tweet here...' autofocus)
+                p.help-block This will be posted on your Twitter timeline.
+            button.btn.btn-primary(type='submit')
+                i.fa.fa-twitter
+                | Tweet
+    #left_tvshow
+        | ad space
+    #right_tvshow
+        #top_tvshow
+            a(href="#", id="tweets_display") tweets
+            | &nbsp; | &nbsp;
+            a(href="#", id="chatroom_display") chat
+            | &nbsp; | &nbsp;
+            a(href="#" id="newTweet_display") compose new tweet
+        hr
+        #bottom_tvshow
+            .chat_full
+                | chat room content here
+            .twit_col
+                .lead
+                    strong.show_title #Scandal
+                    //- #hashtags for Scandal
+                ul.media-list
+                    for tweet in hashtag_status
+                        li.media
+                            a.pull-left(href='http://twitter.com/'+tweet.user.screen_name)
+                                - var image = tweet.user.profile_image_url.replace('_normal', '');
+                                img.media-object(src='#{image}', style='width: 32px; height: 32px;')
+                            .media-body
+                                strong.media-heading #{tweet.user.name}
+                                span.text-muted  @#{tweet.user.screen_name}
+                                p= tweet.text
+            .twit_col
+                .lead
+                    strong.show_title @mentions
+                ul.media-list
+                    for tweet in at_mentions
+                        li.media
+                            a.pull-left(href='http://twitter.com/'+tweet.user.screen_name)
+                                - var image = tweet.user.profile_image_url.replace('_normal', '');
+                                img.media-object(src='#{image}', style='width: 32px; height: 32px;')
+                            .media-body
+                                strong.media-heading #{tweet.user.name}
+                                span.text-muted  @#{tweet.user.screen_name}
+                                p= tweet.text
+            .twit_col
+                .lead
+                    strong.show_title @Scandal
+                    //-tweets from @scandal & RT's they've published
+                ul.media-list
+                    for tweet in from_tvshow
+                        li.media
+                            a.pull-left(href='http://twitter.com/'+tweet.user.screen_name)
+                                - var image = tweet.user.profile_image_url.replace('_normal', '');
+                                img.media-object(src='#{image}', style='width: 32px; height: 32px;')
+                            .media-body
+                                strong.media-heading #{tweet.user.name}
+                                span.text-muted  @#{tweet.user.screen_name}
+                                p= tweet.text

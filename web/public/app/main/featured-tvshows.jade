@@ -1,0 +1,11 @@
+panel.panel-primary
+  //- .panel-heading.text-center TV Show Listings Here
+  -var classes = ['tvShowBlock']
+  .showListingsWrapper(ng-repeat="favoriteTvShow in favoriteTvShows")
+    a(href="")
+      .thumbnail
+        img(alt="100%x200" src="http://img-w.zeebox.com/241x200/{{favoriteTvShow.image}}")
+        h4(class=classes) {{favoriteTvShow.brand.title}}
+        h5 {{favoriteTvShow.title}}
+        .caption
+          p.showDesc {{favoriteTvShow.description}}

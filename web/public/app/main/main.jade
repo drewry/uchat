@@ -1,0 +1,43 @@
+.container#homeWrapper
+	h2 Featured TV Shows
+	.jumbotron(ng-class="myCssVar")(ng-click="myCssVar='animate-hide'")
+		p Viewers can pick favorite shows, see a guide to their shows and view social feeds of other chats in addition to  changing the channel to see what's going on. 
+		p It's like twitter meets the remote control.
+
+	//- clicking jumbotron direct triggers ng-click; hover &amp; button toggle is jQuery
+
+	.randbomButton
+		button
+			| toggle jumbotron
+
+	br
+	br
+
+	.row.starterRow
+		div(ng-include="'/partials/main/featured-tvshows'")
+	//- .col-md-4
+		div(ng-include="'/partials/main/show-hashtag-results'")
+	//- .col-md-4
+		div(ng-include="'/partials/main/user-handle-mentions'")
+	//- .col-md-4
+		div(ng-include="'/partials/main/show-handle-results'")
+
+	br
+	.clear
+	br
+
+
+	div(class="modal fade")(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")(id="myModal")
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button(class="close" type="button" data-dismiss="modal")
+						span(aria-hidden="true")
+							| &times;
+					span.sr-only
+						| Close
+					h4(class="modal-title")(id="myModalLabel")
+						| Create an account or Log-in
+
+				.modal-body(ng-include="'/partials/account/navbar-login'")
+				.clear

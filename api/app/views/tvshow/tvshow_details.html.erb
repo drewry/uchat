@@ -1,0 +1,141 @@
+<div class="container">
+  <h1>{{tvshow.title}}</h1>
+  <p>{{tvshow.description}}</p>
+  <p>{{tvshow.schedule}}</p>
+  <div id="TvShow_leftContent" class="row col-md-3"><img alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDEiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQxIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMC41IiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNhYWE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LXNpemU6MTVweDtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4yNDF4MjAwPC90ZXh0Pjwvc3ZnPg==" style="width: 100%; display: block;"/>
+    <ul id="tvContentSwitch">
+      <li id="showSchedule"><a href="#">Today's Showings</a></li>
+      <li id="showOnDemand"><a href="#">On Demand</a></li>
+      <li id="showTwitter"><a href="#">Twitter Community</a></li>
+      <li id="showChat"><a href="#">Chat</a></li>
+    </ul>
+  </div>
+  <div id="TvShow_ScheduledContent" class="col-md-9">
+    <div class="pull-left">
+      <h3 class="tvShowSchedule_Title">Scheduled air times</h3>
+    </div>
+    <div class="pull-right">
+      <form class="form-inline">
+        <div class="form-group">
+          <input id="scheduleSearch" ng-model="searchText" placeholder="Is it showing today?" class="form-control"/>
+        </div>
+        <div class="form-group margin-left-med"></div>
+      </form>
+    </div>
+    <table class="table table-hover table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Channel</th>
+          <th>Network</th>
+          <th>Time</th>
+          <th>Description</th>
+        </tr>
+        <tbody>
+          <tr ng-repeat="tvshow in tvshows | filter:searchText | orderBy:sortOrder">
+            <td>{{tvshow.channel}}</td>
+            <td>{{tvshow.network}}</td>
+            <td>{{tvshow.schedule | date}}</td>
+            <td>{{tvshow.description}}</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+  </div>
+  <div id="TvShow_onDemandContent" class="col-md-9">
+    <div class="pull-left">
+      <h3 class="tvShowSchedule_Title">On Demand Content</h3>
+    </div>
+    <div class="pull-right">
+      <form class="form-inline">
+        <div class="form-group">
+          <input id="onDemandSearch" ng-model="searchText" placeholder="Find a specific episode" class="form-control"/>
+        </div>
+        <div class="form-group margin-left-med"></div>
+      </form>
+    </div>
+    <table class="table table-hover table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Episode</th>
+          <th>Description</th>
+        </tr>
+        <tbody>
+          <tr ng-repeat="tvshow in tvshows | filter:searchText | orderBy:sortOrder">
+            <td>{{tvshow.channel}}</td>
+            <td>{{tvshow.description}}</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+  </div>
+  <div id="TvShow_twitterContent" class="col-md-9">
+    <h3 id="Community" class="tvShowSchedule_Title">Twitter Community Content</h3>
+    <div class="twit_col">
+      <div class="lead"><strong class="show_title">#hashtag</strong>
+      </div>
+      <ul class="media-list">
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="twit_col">
+      <div class="lead"><strong class="show_title">@mentions</strong></div>
+      <ul class="media-list">
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="twit_col">
+      <div class="lead"><strong class="show_title">@tvshow_name</strong>
+      </div>
+      <ul class="media-list">
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+        <li class="media"><a href="http://twitter.com/whoisvince" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" style="width: 32px; height: 32px;" class="media-object"/></a>
+          <div class="media-body"><strong class="media-heading">Brad Frost</strong><span class="text-muted"> @bradfrost</span>
+            <p>We are interested how this loss of "anonymity" will affect buying & selling of Bitcoin... any thoughts? http://fb.me/2m6TmnVd9</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="TvShow_chatContent" class="col-md-9">
+    <h3 id="Community" class="tvShowSchedule_Title">Chat w/ The Community</h3>
+  </div>
+  <div class="clear"></div><br/><br/>
+  <div class="clear"></div><br/><br/>
+</div>
