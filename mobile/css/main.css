@@ -68,8 +68,8 @@ textarea {
 .uchat {}
 .uchat .icon-live {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background: url(../img/media/live.png);
   float: right;
   margin: 5px 5px 0 0;
@@ -88,6 +88,7 @@ textarea {
 }
 .uchat .shows .show {
   height: 160px;
+  margin: 0 0 30px 0;
   background-color: #000;
   background-repeat: no-repeat; 
   background-position: center center;
