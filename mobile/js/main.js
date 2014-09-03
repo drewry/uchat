@@ -18,10 +18,11 @@ var current_show = '';
 var api_host = 'http://localhost:8081';
 
 function renderTweet(tweet) {
+  var time = moment(tweet.created_at).fromNow();
   var html = '';
   html = '<div class="tweet ui-grid-d">';
     html += '<div class="ui-block-a"><figure><img src="' + tweet.user.profile_image_url + '"></figure></div>';
-    html += '<div class="ui-block-b"><h3><a href="">@' + tweet.user.screen_name + '</a></h3>' + tweet.text + '</div>';
+    html += '<div class="ui-block-b"><span class="time">' + time + '</span><h3><a href="">@' + tweet.user.screen_name + '</a></h3>' + tweet.text + '</div>';
   html += '</div>';
 
   return html;
