@@ -41,6 +41,8 @@ function renderStars(rating) {
   return html;
 }
 
+$('#tabs').tabs();
+
 // clicking to change a show
 $('#home .shows a').on('vclick', function(e) {
   var tag = $(this).attr('data-show-tag');
@@ -55,6 +57,10 @@ $('#home .shows a').on('vclick', function(e) {
   $('#show .tweets').html('');
   $('#show .rating').html(renderStars(show.rating));
 
+  $('#tabs').tabs("option", "active", 0);
+  $('#tabs li a').removeClass(' ui-btn-active');
+  $('#btnTabTweets').addClass(' ui-btn-active');
+
   $.get(api_host + '/tvshow/tweetsByHashtag/' + tag, function(tweets) {
     for(var i = 0; i < tweets.length; i++) {
       var tweet = tweets[i];
@@ -67,17 +73,24 @@ $('#home .shows a').on('vclick', function(e) {
 // close the popup
 $('#tweet').on('vclick', function(e) {
   var $textarea = $(this).parent().children('textarea');
-  var tweet = {
-    user: {
-      created_at: moment().format(),
-      screen_name: 'ATT',
-      profile_image_url: 'https://pbs.twimg.com/profile_images/459417596433932288/lwjFsLn8_400x400.png'
-    },
-    text: $textarea.val()
-  };
 
-  $('#show .tweets').prepend(renderTweet(tweet));
+  if($textarea.val().length > 0) {
+    var tweet = {
+      user: {
+        created_at: moment().format(),
+        screen_name: 'ATT',
+        profile_image_url: 'https://pbs.twimg.com/profile_images/459417596433932288/lwjFsLn8_400x400.png'
+      },
+      text: $textarea.val()
+    };
 
-  $textarea.val('');
-  $("#popupTweet").popup("close");
+    $('#show .tweets').prepend(renderTweet(tweet));
+
+    $('#tabs').tabs("option", "active", 0);
+    $('#tabs li a').removeClass(' ui-btn-active');
+    $('#btnTabTweets').addClass(' ui-btn-active');
+
+    $textarea.val('');
+    $("#popupTweet").popup("close");
+  }
 })

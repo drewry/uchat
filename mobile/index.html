@@ -93,7 +93,21 @@
                     <div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
                     <div style="clear:both"></div>
                 </div>
-                <div class="tweets"></div>
+                <div data-role="tabs" id="tabs">
+                  <div data-role="navbar">
+                    <ul>
+                      <li><a href="#tabTweets" id="btnTabTweets" data-ajax="false">Tweets</a></li>
+                      <li><a href="#tabChat" id="btnTabChat" data-ajax="false">Chat</a></li>
+                    </ul>
+                  </div>
+                  <div id="tabTweets" class="ui-body-d ui-content">
+                    <div class="tweets"></div>
+                  </div>
+                  <div id="tabChat">
+                    <div>Chat room coming soon</div>
+                  </div>
+                </div>
+                
             </div>
         </div>
 
