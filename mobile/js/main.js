@@ -50,12 +50,20 @@ $('#home .shows a').on('vclick', function(e) {
   });
 });
 
-// the show is loaded
-$('#show').on('pageshow', function(e) {
-  $(document).attr('title', current_show.title);
-});
-
 // close the popup
 $('#tweet').on('vclick', function(e) {
+  var $textarea = $(this).parent().children('textarea');
+  var tweet = {
+    user: {
+      created_at: moment().format(),
+      screen_name: 'ATT',
+      profile_image_url: 'https://pbs.twimg.com/profile_images/459417596433932288/lwjFsLn8_400x400.png'
+    },
+    text: $textarea.val()
+  };
+
+  $('#show .tweets').prepend(renderTweet(tweet));
+
+  $textarea.val('');
   $("#popupTweet").popup("close");
 })
