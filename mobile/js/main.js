@@ -14,13 +14,22 @@ var all_shows = {
   'fallingskies'  : { hashtag: 'fallingskies',    title: 'Falling Skies',     twitter: 'FallingSkiesTNT', desc: 'Coming soon!' },
   'houseofcards'  : { hashtag: 'houseofcards',    title: 'House Of Cards',    twitter: 'HouseofCards',    desc: 'Coming soon!' }
 };
+var current_show = '';
 
-$("#home .shows a").on("vclick", function(e) {
+// clicking to change a show
+$('#home .shows a').on('vclick', function(e) {
   var tag = $(this).attr('data-show-tag');
   var show = all_shows[tag];
+
+  current_show = show;
 
   $('#show h1').text('#' + tag);
   $('#show h2').text(show.title);
   $('#show p').text(show.desc);
   $('#show figure').html('<img src="img/media/thumb-' + tag + '.jpg">');
+});
+
+// the show is loaded
+$('#show').on('pageshow', function(e) {
+  $(document).attr('title', current_show.title);
 });
