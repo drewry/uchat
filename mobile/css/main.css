@@ -120,6 +120,10 @@ textarea {
 #show .ui-content .profile {
   padding: 0 0 10px 0;
 }
+#show .ui-content .profile img {
+  min-width: 48px;
+  min-height: 48px;
+}
 #show .ui-content .profile p {
   width: 95%;
   margin: 0 0 5px 0;
@@ -186,6 +190,24 @@ textarea {
 .ui-icon-twitter:after {
   background-image: url("images/custom/twitter.png");
   background-size: 18px 18px;
+}
+
+#chatroom {
+  min-height: 400px;
+  background: #fff;
+  margin: 0 0 46px 0;
+}
+
+#tabChat .ui-input-text {
+  float: left;
+  width: 75%;
+  height: 30px;
+  margin: 8px 10px 8px 10px;
+}
+#tabChat button {
+  float: left;
+  width: 30px;
+  border-radius: 5px;
 }
 
 /* ==========================================================================

@@ -51,7 +51,7 @@
     <body>
         <!-- Add your site or application content here -->
         <div data-role="page" id="home" class="uchat-page">
-            <div data-role="header" data-position="fixed">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
                 <h1>uChat</h1>
             </div>
             <div role="main" class="ui-content shows">
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div data-role="page" id="show" class="uchat-page">
-            <div data-role="header" data-position="fixed">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
                 <h1>hashtag</h1>
                 <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext">No text</a>
                 <a href="#popupTweet" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-shadow ui-corner-all ui-icon-twitter ui-btn-icon-notext">No text</a>
@@ -104,7 +104,11 @@
                     <div class="tweets"></div>
                   </div>
                   <div id="tabChat">
-                    <div>Chat room coming soon</div>
+                    <div id="chatroom"></div>
+                    <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+                        <input type="text" id="textchat" name="textinput-hide" id="textinput-hide" placeholder="Enter chat message..." value="">
+                        <button type="button" id="sendchat" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-action ui-btn-icon-notext"></button>
+                    </div>
                   </div>
                 </div>
                 
