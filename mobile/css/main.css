@@ -197,6 +197,42 @@ textarea {
   background: #fff;
   margin: 0 0 46px 0;
 }
+  #chatroom .chat-message {
+    padding: 2%;
+    margin: 8px 15% 8px 5%;
+    border-radius: 10px;
+    background-color: #555;
+    color: #fff;
+    border: 3px solid #888;
+    float: left;
+    clear: both;
+  }
+    #chatroom .chat-message h3 {
+      margin: 0 0 5px 0;
+      float: left;
+      color: inherit;
+      font-size: 14px;
+    }
+    #chatroom .chat-message h4 {
+      margin: 0;
+      float: right;
+      color: inherit;
+      font-size: 10px;
+      position: relative;
+      top: 2px;
+    }
+    #chatroom .chat-message p {
+      color: inherit;
+      font-size: 12px;
+      clear: both;
+    }
+  #chatroom .chat-message-you {
+    float: right;
+    clear: both;
+    margin: 8px 5% 8px 15%;
+    background-color: #3b98ee;
+    border: 3px solid #78b9f6;
+  }
 
 #tabChat .ui-input-text {
   float: left;
