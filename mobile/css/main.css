@@ -95,6 +95,39 @@ textarea {
   background-size: cover;
 }
 
+#show .ui-content {
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+}
+#show .ui-content figure {
+  float: left;
+  margin: 1em 15px;
+  width: 30%;
+}
+#show .ui-content figure img {
+  width: 100%;
+}
+#show .ui-content h2 {
+  color: #fff;
+  text-shadow: none;
+  float: left;
+  font-size: 14px;
+  margin: 15px 0 5px 0;
+  width: 60%;
+}
+#show .ui-content p {
+  color: #fff;
+  text-shadow: none;
+  font-size: 12px;
+  margin: 0 10px 0 0;
+}
+
+#popupTweet {
+  width: 95%;
+  margin: 0 auto;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

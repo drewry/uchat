@@ -55,17 +55,31 @@
                 <h1>uChat</h1>
             </div>
             <div role="main" class="ui-content shows">
-               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/got.jpg)"><i class="icon-live"></i></div></a>
-               <a href="#show" data-show-tag='scandal'><div class="show" style="background-image: url(img/media/scandal.jpg)"><i class="icon-live"></i></div></a>
-               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/got.jpg)"><i class="icon-live"></i></div></a>
-               <a href="#show" data-show-tag='scandal'><div class="show" style="background-image: url(img/media/scandal.jpg)"><span class="next-airing">Next airing Tue 5:00pm</span></div></a>
-               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/got.jpg)"><span class="next-airing">Next airing Wed 5:30pm</span></div></a>
+               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/bg-got.jpg)"><i class="icon-live"></i></div></a>
+               <a href="#show" data-show-tag='scandal'><div class="show" style="background-image: url(img/media/bg-scandal.jpg)"><i class="icon-live"></i></div></a>
+               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/bg-got.jpg)"><i class="icon-live"></i></div></a>
+               <a href="#show" data-show-tag='scandal'><div class="show" style="background-image: url(img/media/bg-scandal.jpg)"><span class="next-airing">Next airing Tue 5:00pm</span></div></a>
+               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/bg-got.jpg)"><span class="next-airing">Next airing Wed 5:30pm</span></div></a>
             </div>
         </div>
         <div data-role="page" id="show" class="uchat-page">
             <div data-role="header" data-position="fixed">
-                <h1></h1>
-                <a href="#home" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+                <h1>hashtag</h1>
+                <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext">No text</a>
+                <a href="#popupTweet" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext">No text</a>
+                <div data-role="popup" data-overlay-theme="b" data-theme="a" id="popupTweet" class="ui-corner-all">
+                    <form>
+                        <div>
+                            <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-action">Tweet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div role="main" class="ui-content">
+                <figure><img src="http://placehold.it/320x475"></figure>
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non sapien at neque tempor iaculis maximus et nulla. Donec viverra metus turpis, sed consectetur purus pretium nec.</p>
             </div>
         </div>
 
