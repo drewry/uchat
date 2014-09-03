@@ -41,6 +41,22 @@ function renderStars(rating) {
   return html;
 }
 
+// render the chat message
+function renderChat(message, you) {
+  var time = moment(message.created_at).fromNow();
+
+  if(you) {
+    var html = '<div class="chat-message chat-message-you">';
+  } else {
+    var html = '<div class="chat-message">';
+  }
+
+  html += '<h4>' + time + '</h4><h3>' + message.user_name + '</h3><p>' + message.text + '</p></div>';
+
+  return html;
+}
+
+// start the tabs
 $('#tabs').tabs();
 
 // clicking to change a show
@@ -55,6 +71,7 @@ $('#home .shows a').on('vclick', function(e) {
   $('#show p').text(show.desc);
   $('#show figure').html('<img src="img/media/thumb-' + tag + '.jpg">');
   $('#show .tweets').html('');
+  $('#show #chatroom').html('');
   $('#show .rating').html(renderStars(show.rating));
 
   $('#tabs').tabs("option", "active", 0);
@@ -68,6 +85,20 @@ $('#home .shows a').on('vclick', function(e) {
       $('#show .tweets').append(renderTweet(tweet));
     }
   });
+});
+
+// send the chat message
+$('#sendchat').on('vclick', function(e) {
+  if($('#textchat').val().length > 0) {
+    var message = {
+      created_at: moment().format(),
+      user_name: 'ATT',
+      text: $('#textchat').val()
+    }
+
+    $('#show #chatroom').append(renderChat(message, true));
+    $('#textchat').val('');
+  }
 });
 
 // close the popup
