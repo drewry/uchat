@@ -68,10 +68,10 @@
                 <a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext">No text</a>
                 <a href="#popupTweet" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-shadow ui-corner-all ui-icon-twitter ui-btn-icon-notext">No text</a>
                 <div data-role="popup" data-overlay-theme="b" data-theme="a" id="popupTweet" class="ui-corner-all">
-                    <form>
+                    <form method="post">
                         <div>
                             <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-                            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-action">Tweet</button>
+                            <button type="button" id="tweet" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-action">Tweet</button>
                         </div>
                     </form>
                 </div>

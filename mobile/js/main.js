@@ -54,3 +54,8 @@ $('#home .shows a').on('vclick', function(e) {
 $('#show').on('pageshow', function(e) {
   $(document).attr('title', current_show.title);
 });
+
+// close the popup
+$('#tweet').on('vclick', function(e) {
+  $("#popupTweet").popup("close");
+})
