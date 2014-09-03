@@ -28,6 +28,19 @@ function renderTweet(tweet) {
   return html;
 }
 
+function renderStars(rating) {
+  var html = ''
+
+  for(var i = 0; i < rating; i++) {
+    html += '<i class="fa fa-star"></i>';
+  }
+  for(var i = 0; i < (10 - rating); i++) {
+    html += '<i class="fa fa-star-o"></i>';
+  }
+
+  return html;
+}
+
 // clicking to change a show
 $('#home .shows a').on('vclick', function(e) {
   var tag = $(this).attr('data-show-tag');
@@ -40,6 +53,7 @@ $('#home .shows a').on('vclick', function(e) {
   $('#show p').text(show.desc);
   $('#show figure').html('<img src="img/media/thumb-' + tag + '.jpg">');
   $('#show .tweets').html('');
+  $('#show .rating').html(renderStars(show.rating));
 
   $.get(api_host + '/tvshow/tweetsByHashtag/' + tag, function(tweets) {
     for(var i = 0; i < tweets.length; i++) {

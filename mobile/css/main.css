@@ -123,6 +123,14 @@ textarea {
 #show .ui-content .profile p {
   width: 95%;
 }
+#show .ui-content .profile .rating {
+  font-size: 14px;  
+}
+#show .ui-content .profile .rating i {
+  margin: 0 3px 0 0;
+  color: #fdd312;
+  font-weight: bold;
+}
 #show .ui-content div {
   color: #fff;
   text-shadow: none;
