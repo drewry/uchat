@@ -22,7 +22,7 @@ var all_responses = {
   2:  'What\'s up?',
   3:  'Who made this app? We want it!',
   4:  'Just app stuff',
-  5:  'I love ' + current_show.title,
+  5:  'I love this app!',
   6:  'replace me',
   7:  'replace me',
   8:  'replace me',
