@@ -123,9 +123,13 @@ textarea {
   margin: 0 10px 0 0;
 }
 
-#popupTweet {
+#popupTweet div {
   width: 95%;
   margin: 0 auto;
+}
+.ui-icon-twitter:after {
+  background-image: url("images/custom/twitter.png");
+  background-size: 18px 18px;
 }
 
 /* ==========================================================================
