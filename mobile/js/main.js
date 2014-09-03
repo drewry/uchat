@@ -15,6 +15,17 @@ var all_shows = {
   'houseofcards'  : { hashtag: 'houseofcards',    title: 'House Of Cards',    twitter: 'HouseofCards',    desc: 'Coming soon!' }
 };
 var current_show = '';
+var api_host = 'http://localhost:8081';
+
+function renderTweet(tweet) {
+  var html = '';
+  html = '<div class="tweet ui-grid-d">';
+    html += '<div class="ui-block-a"><figure><img src="' + tweet.user.profile_image_url + '"></figure></div>';
+    html += '<div class="ui-block-b"><h3><a href="">@' + tweet.user.screen_name + '</a></h3>' + tweet.text + '</div>';
+  html += '</div>';
+
+  return html;
+}
 
 // clicking to change a show
 $('#home .shows a').on('vclick', function(e) {
@@ -27,6 +38,15 @@ $('#home .shows a').on('vclick', function(e) {
   $('#show h2').text(show.title);
   $('#show p').text(show.desc);
   $('#show figure').html('<img src="img/media/thumb-' + tag + '.jpg">');
+  $('#show .tweets').html('');
+
+  $.get(api_host + '/tvshow/tweetsByHashtag/' + tag, function(tweets) {
+    for(var i = 0; i < tweets.length; i++) {
+      var tweet = tweets[i];
+
+      $('#show .tweets').append(renderTweet(tweet));
+    }
+  });
 });
 
 // the show is loaded
