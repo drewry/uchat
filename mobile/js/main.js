@@ -1,18 +1,18 @@
 var all_shows = {
-  'thegoodwife'   : { hashtag: 'thegoodwife',     title: 'The Good Wife',     twitter: 'TheGoodWife_CBS', desc: 'Coming soon!' },
-  'gameofthrones' : { hashtag: 'gameofthrones',   title: 'Game of Thrones',   twitter: 'GameOfThrones',   desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non sapien at neque tempor.' },
-  'scandal'       : { hashtag: 'scandal',         title: 'Scandal',           twitter: 'ScandalABC',      desc: 'Nulla et eros accumsan, consectetur ante sed, malesuada ante. Mauris at neque vel mauris.' },
-  'idol'          : { hashtag: 'idol',            title: 'American Idol',     twitter: 'AmericanIdol',    desc: 'Coming soon!' },
-  'suits'         : { hashtag: 'suits',           title: 'Suits',             twitter: 'Suits_USA',       desc: 'Coming soon!' },
-  'trueblood'     : { hashtag: 'trueblood',       title: 'True Blood',        twitter: 'TrueBloodHBO',    desc: 'Coming soon!' },
-  'madmen'        : { hashtag: 'madmen',          title: 'Mad Men',           twitter: 'MadMen_AMC',      desc: 'Coming soon!' },
-  'thewalkingdead': { hashtag: 'thewalkingdead',  title: 'The Walking Dead',  twitter: 'WalkingDead_AMC', desc: 'Coming soon!' },
-  'thestrain'     : { hashtag: 'thestrain',       title: 'The Strain',        twitter: 'TheStrainFX',     desc: 'Coming soon!' },
-  'tyrant'        : { hashtag: 'tyrant',          title: 'Tyrant',            twitter: 'TyrantFX',        desc: 'Coming soon!' },
-  'thelastship'   : { hashtag: 'thelastship',     title: 'The Last Ship',     twitter: 'TheLastShipTNT',  desc: 'Coming soon!' },
-  'extant'        : { hashtag: 'extant',          title: 'Extant',            twitter: 'Extant_CBS',      desc: 'Coming soon!' },
-  'fallingskies'  : { hashtag: 'fallingskies',    title: 'Falling Skies',     twitter: 'FallingSkiesTNT', desc: 'Coming soon!' },
-  'blacklist'     : { hashtag: 'blacklist',       title: 'Blacklist',         twitter: 'NBCBlacklist',    desc: 'Coming soon!' }
+  'thegoodwife'   : { hashtag: 'thegoodwife',     title: 'The Good Wife',     twitter: 'TheGoodWife_CBS', desc: 'Coming soon!', rating: 8 },
+  'gameofthrones' : { hashtag: 'gameofthrones',   title: 'Game of Thrones',   twitter: 'GameOfThrones',   desc: 'Seven noble families fight for control of the mythical land of Westeros.', rating: 9 },
+  'scandal'       : { hashtag: 'scandal',         title: 'Scandal',           twitter: 'ScandalABC',      desc: 'A White House Communications Director leaves to start her own crisis management firm...', rating: 8 },
+  'idol'          : { hashtag: 'idol',            title: 'American Idol',     twitter: 'AmericanIdol',    desc: 'Coming soon!', rating: 4 },
+  'suits'         : { hashtag: 'suits',           title: 'Suits',             twitter: 'Suits_USA',       desc: 'Coming soon!', rating: 9 },
+  'trueblood'     : { hashtag: 'trueblood',       title: 'True Blood',        twitter: 'TrueBloodHBO',    desc: 'Coming soon!', rating: 8 },
+  'madmen'        : { hashtag: 'madmen',          title: 'Mad Men',           twitter: 'MadMen_AMC',      desc: 'Coming soon!', rating: 9 },
+  'thewalkingdead': { hashtag: 'thewalkingdead',  title: 'The Walking Dead',  twitter: 'WalkingDead_AMC', desc: 'Coming soon!', rating: 7 },
+  'thestrain'     : { hashtag: 'thestrain',       title: 'The Strain',        twitter: 'TheStrainFX',     desc: 'Coming soon!', rating: 8 },
+  'tyrant'        : { hashtag: 'tyrant',          title: 'Tyrant',            twitter: 'TyrantFX',        desc: 'Coming soon!', rating: 8 },
+  'thelastship'   : { hashtag: 'thelastship',     title: 'The Last Ship',     twitter: 'TheLastShipTNT',  desc: 'Coming soon!', rating: 7 },
+  'extant'        : { hashtag: 'extant',          title: 'Extant',            twitter: 'Extant_CBS',      desc: 'Coming soon!', rating: 7 },
+  'fallingskies'  : { hashtag: 'fallingskies',    title: 'Falling Skies',     twitter: 'FallingSkiesTNT', desc: 'Coming soon!', rating: 7 },
+  'blacklist'     : { hashtag: 'blacklist',       title: 'Blacklist',         twitter: 'NBCBlacklist',    desc: 'Coming soon!', rating: 8 }
 };
 var current_show = '';
 var api_host = 'http://localhost:8081';
