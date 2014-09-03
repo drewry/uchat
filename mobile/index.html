@@ -50,17 +50,22 @@
     </head>
     <body>
         <!-- Add your site or application content here -->
-        <div data-role="page" class="uchat">
+        <div data-role="page" id="home" class="uchat-page">
             <div data-role="header" data-position="fixed">
                 <h1>uChat</h1>
-                <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
             </div>
             <div role="main" class="ui-content shows">
-               <div class="show" style="background-image: url(img/media/1.jpg)"><i class="icon-live"></i></div>
-               <div class="show" style="background-image: url(img/media/2.jpg)"><i class="icon-live"></i></div>
-               <div class="show" style="background-image: url(img/media/1.jpg)"><i class="icon-live"></i></div>
-               <div class="show" style="background-image: url(img/media/2.jpg)"><span class="next-airing">Next airing Tue 5:00pm</span></div>
-               <div class="show" style="background-image: url(img/media/1.jpg)"><span class="next-airing">Next airing Wed 5:30pm</span></div>
+               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/got.jpg)"><i class="icon-live"></i></div></a>
+               <a href="#show" data-show-tag='scandal'><div class="show" style="background-image: url(img/media/scandal.jpg)"><i class="icon-live"></i></div></a>
+               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/got.jpg)"><i class="icon-live"></i></div></a>
+               <a href="#show" data-show-tag='scandal'><div class="show" style="background-image: url(img/media/scandal.jpg)"><span class="next-airing">Next airing Tue 5:00pm</span></div></a>
+               <a href="#show" data-show-tag='got'><div class="show" style="background-image: url(img/media/got.jpg)"><span class="next-airing">Next airing Wed 5:30pm</span></div></a>
+            </div>
+        </div>
+        <div data-role="page" id="show" class="uchat-page">
+            <div data-role="header" data-position="fixed">
+                <h1></h1>
+                <a href="#home" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
             </div>
         </div>
 
