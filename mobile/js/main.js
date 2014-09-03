@@ -17,6 +17,19 @@ var all_shows = {
 var current_show = '';
 var api_host = 'http://localhost:8081';
 
+var all_responses = {
+  1:  'Hey how is it going?',
+  2:  'What\'s up?',
+  3:  'Who made this app? We want it!',
+  4:  'Just app stuff',
+  5:  'I love ' + current_show.title,
+  6:  'replace me',
+  7:  'replace me',
+  8:  'replace me',
+  9:  'replace me',
+  10: 'replace me'
+}
+
 function renderTweet(tweet) {
   var time = moment(tweet.created_at).fromNow();
   var html = '';
@@ -51,13 +64,34 @@ function renderChat(message, you) {
     var html = '<div class="chat-message">';
   }
 
-  html += '<h4>' + time + '</h4><h3>' + message.user_name + '</h3><p>' + message.text + '</p></div>';
+  html += '<h4>' + time + '</h4><h3>' + message.user_name + '</h3><p>' + message.text + '</p></div><div style="clear:both"></div>';
 
   return html;
 }
 
+// random chat response
+function randomChat() {
+  var random = Math.round(Math.random() * 3) + 1; // 1 in 3 chance of a response
+  var type   = Math.round(Math.random() * 10) + 1; // 1 in 10 responses
+
+  if(random == 1) {
+    var message = {
+      created_at: moment().format(),
+      user_name: 'Comcast',
+      text: all_responses[type]
+    }
+
+    $('#show #chatroom').append(renderChat(message, false));
+  }
+}
+
 // start the tabs
 $('#tabs').tabs();
+
+// timeout for random chat
+setInterval(function() {
+  randomChat();
+}, 1000);
 
 // clicking to change a show
 $('#home .shows a').on('vclick', function(e) {

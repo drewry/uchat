@@ -196,6 +196,7 @@ textarea {
   min-height: 400px;
   background: #fff;
   margin: 0 0 46px 0;
+  padding: 10px 0 10px 0;
 }
   #chatroom .chat-message {
     min-width: 50%;
