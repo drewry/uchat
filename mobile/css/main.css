@@ -107,6 +107,7 @@ textarea {
 }
 #show .ui-content figure img {
   width: 100%;
+  border: 1px solid #fff;
 }
 #show .ui-content h2 {
   color: #fff;
