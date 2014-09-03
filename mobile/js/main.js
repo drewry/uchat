@@ -12,7 +12,7 @@ var all_shows = {
   'thelastship'   : { hashtag: 'thelastship',     title: 'The Last Ship',     twitter: 'TheLastShipTNT',  desc: 'Coming soon!' },
   'extant'        : { hashtag: 'extant',          title: 'Extant',            twitter: 'Extant_CBS',      desc: 'Coming soon!' },
   'fallingskies'  : { hashtag: 'fallingskies',    title: 'Falling Skies',     twitter: 'FallingSkiesTNT', desc: 'Coming soon!' },
-  'houseofcards'  : { hashtag: 'houseofcards',    title: 'House Of Cards',    twitter: 'HouseofCards',    desc: 'Coming soon!' }
+  'blacklist'     : { hashtag: 'blacklist',       title: 'Blacklist',         twitter: 'NBCBlacklist',    desc: 'Coming soon!' }
 };
 var current_show = '';
 var api_host = 'http://localhost:8081';
