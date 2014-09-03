@@ -120,6 +120,9 @@ textarea {
 #show .ui-content .profile {
   padding: 0 0 10px 0;
 }
+#show .ui-content .profile p {
+  width: 95%;
+}
 #show .ui-content div {
   color: #fff;
   text-shadow: none;
