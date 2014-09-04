@@ -1,0 +1,18 @@
+38.110.19.174 - - [03/Sep/2014 19:40:22] "GET / HTTP/1.1" 200 -
+Serving HTTP on 0.0.0.0 port 8000 ...
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 230, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 226, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 599, in test
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
