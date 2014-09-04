@@ -187,6 +187,11 @@ textarea {
   width: 95%;
   margin: 0 auto;
 }
+#popupTweet #tweet {
+  padding-left: 1em;
+  background-color: #38c;
+  border-color: #307CB8;
+}
 .ui-icon-twitter:after {
   background-image: url("images/custom/twitter.png");
   background-size: 18px 18px;
