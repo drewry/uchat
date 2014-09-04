@@ -1,0 +1,391 @@
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 230, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 226, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 595, in test
+    httpd = ServerClass(server_address, HandlerClass)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 230, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 226, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 595, in test
+    httpd = ServerClass(server_address, HandlerClass)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+38.110.19.174 - - [03/Sep/2014 19:33:01] "GET / HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:01] "GET /css/normalize.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:01] "GET /css/main.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:01] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:01] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:01] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:01] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /js/helper.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /js/main.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/live.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:02] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET / HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /css/normalize.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /css/main.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /js/main.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /js/helper.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /img/media/live.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:10] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:11] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:13] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET / HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /css/normalize.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /css/main.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /js/helper.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /js/main.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /img/media/live.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:52] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:53] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:33:55] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET / HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /css/main.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /css/normalize.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /img/touch/touch-icon-196x196.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /img/touch/apple-touch-icon.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /js/helper.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /js/main.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:02] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/live.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:03] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:41:04] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:53:28] "GET /img/media/thumb-extant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:53:41] "GET /img/media/thumb-thelastship.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 19:57:44] code 404, message File not found
+38.110.19.174 - - [03/Sep/2014 19:57:44] "GET /tvshow/tweetsByHashtag/thelastship HTTP/1.1" 404 -
+Serving HTTP on 0.0.0.0 port 8000 ...
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 230, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 226, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 599, in test
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+38.110.19.174 - - [03/Sep/2014 20:06:15] "GET / HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:15] "GET /css/main.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:15] "GET /css/normalize.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:15] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:16] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:16] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:17] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:17] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:17] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:19] "GET /js/main.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:19] "GET /js/helper.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:19] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:19] "GET /fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:20] "GET /img/media/live.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:20] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:20] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:20] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:20] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:21] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:21] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:21] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:23] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:23] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:23] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:25] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:25] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:25] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:25] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:25] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:25] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:06:26] "GET /favicon.ico HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:21] "GET / HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:22] "GET /css/normalize.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:22] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:24] "GET /css/main.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:24] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:24] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:25] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:25] "GET /js/main.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:25] "GET /js/helper.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:25] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:31] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:36] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:36] "GET /img/media/live.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:36] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:36] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:36] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:37] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:38] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:39] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:39] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:39] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:39] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:39] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:40] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:41] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:45] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:45] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+38.110.19.174 - - [03/Sep/2014 20:07:49] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:10] "GET / HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:11] "GET /css/normalize.css HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:11] "GET /css/main.css HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:11] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:11] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:11] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:11] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:11] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:11] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:17] "GET /js/helper.js HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:08:20] "GET /js/main.js HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:15] "GET / HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:15] "GET /fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:15] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:15] "GET /img/media/live.png HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:15] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:15] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:16] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:16] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:16] "GET /img/touch/apple-touch-icon.png HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:16] "GET /js/main.js HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:16] "GET /img/touch/apple-touch-icon-144x144-precomposed.png HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:16] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:31] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:31] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:31] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:31] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:31] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:31] "GET /fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:38] "GET /img/media/live.png HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:38] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:39] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:40] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:41] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:45] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:46] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:48] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:53] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:09:59] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:10:03] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:10:05] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+208.54.70.134 - - [03/Sep/2014 20:10:06] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:36] "GET / HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:36] "GET /css/normalize.css HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:36] "GET /css/main.css HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:36] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:37] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:37] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:37] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:37] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:37] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:37] "GET /js/helper.js HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:37] "GET /js/main.js HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/live.png HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:38] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:39] "GET /img/touch/touch-icon-196x196.png HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:39] "GET /img/touch/apple-touch-icon-144x144-precomposed.png HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:39] "GET /img/touch/apple-touch-icon.png HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:11:45] "GET /img/media/thumb-thegoodwife.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:12:16] "GET /img/media/thumb-tyrant.jpg HTTP/1.1" 200 -
+166.205.68.39 - - [03/Sep/2014 20:12:21] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -
+130.185.139.213 - - [03/Sep/2014 20:43:10] "GET / HTTP/1.0" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:38] "GET / HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /css/normalize.css HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /css/main.css HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /js/helper.js HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:39] "GET /js/main.js HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:40] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:40] "GET /fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:40] "GET /img/media/live.png HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:40] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:40] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:40] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:41] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:42] "GET /img/touch/apple-touch-icon.png HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:42] "GET /img/touch/apple-touch-icon-144x144-precomposed.png HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:48:43] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -
+172.56.21.248 - - [03/Sep/2014 20:51:05] "GET /img/media/thumb-scandal.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET / HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /css/normalize.css HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /css/main.css HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /css/jquery.mobile-1.4.3.min.css HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /css/font-awesome.min.css HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /js/vendor/modernizr-2.7.1.min.js HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /js/vendor/jquery.mobile-1.4.3.min.js HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /js/vendor/jquery-2.1.0.min.js HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /js/vendor/moment.js HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /js/helper.js HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /js/main.js HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-gameofthrones.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/live.png HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-fallingskies.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-thelastship.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-idol.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-thegoodwife.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-scandal.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-blacklist.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /css/images/custom/twitter.png HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-trueblood.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-suits.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-tyrant.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-thestrain.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-extant.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /css/images/ajax-loader.gif HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-madmen.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:56] "GET /img/media/bg-thewalkingdead.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:57] "GET /img/touch/apple-touch-icon.png HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:51:57] "GET /img/touch/touch-icon-196x196.png HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:52:14] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:52:29] "GET /img/media/thumb-thewalkingdead.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:58:21] "GET /img/media/thumb-scandal.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:58:57] "GET /img/media/thumb-madmen.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 20:59:05] "GET /img/media/thumb-suits.jpg HTTP/1.1" 200 -
+143.215.113.150 - - [03/Sep/2014 21:05:44] "GET /img/media/thumb-extant.jpg HTTP/1.1" 200 -
+182.254.153.249 - - [03/Sep/2014 21:15:18] code 404, message File not found
+182.254.153.249 - - [03/Sep/2014 21:15:18] "GET http://www.booking.com/ HTTP/1.1" 404 -
+143.215.113.150 - - [03/Sep/2014 21:15:53] "GET /img/media/thumb-thelastship.jpg HTTP/1.1" 200 -
+107.213.142.32 - - [03/Sep/2014 21:37:46] "GET /img/media/thumb-gameofthrones.jpg HTTP/1.1" 200 -

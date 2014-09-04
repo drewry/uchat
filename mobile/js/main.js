@@ -15,7 +15,7 @@ var all_shows = {
   'houseofcards'  : { hashtag: 'houseofcards',    title: 'House Of Cards',    twitter: 'HouseofCards',    desc: 'A Congressman works with his equally conniving wife to exact revenge on the people...' ,      rating: 8 }
 };
 var current_show = '';
-var api_host = 'http://localhost:8081';
+var api_host = 'http://192.241.253.215:3000';
 
 var all_responses = {
   1:  'Hey how is it going?',
