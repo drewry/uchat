@@ -12,7 +12,7 @@ var all_shows = {
   'thelastship'   : { hashtag: 'thelastship',     title: 'The Last Ship',     twitter: 'TheLastShipTNT',  desc: 'The crew of a naval destroyer is forced to confront the reality of a new existence when...' , rating: 7 },
   'extant'        : { hashtag: 'extant',          title: 'Extant',            twitter: 'Extant_CBS',      desc: 'An astronaut struggles to learn how she became pregnant while on a 13-month-long solo...' ,   rating: 7 },
   'fallingskies'  : { hashtag: 'fallingskies',    title: 'Falling Skies',     twitter: 'FallingSkiesTNT', desc: 'Survivors of an alien attack on earth gather together to fight for their lives and...' ,      rating: 7 },
-  'houseofcards'  : { hashtag: 'houseofcards',    title: 'House Of Cards',    twitter: 'HouseofCards',    desc: 'A Congressman works with his equally conniving wife to exact revenge on the people...' ,      rating: 8 }
+  'blacklist'     : { hashtag: 'blacklist',       title: 'Blacklist',         twitter: 'NBCBlacklist',    desc: 'Former government agent has eluded capture for decades but he suddenly surrenders...' ,       rating: 8 }
 };
 var current_show = '';
 var api_host = 'http://192.241.253.215:3000';
