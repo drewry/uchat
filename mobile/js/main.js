@@ -23,11 +23,11 @@ var all_responses = {
   3:  'Who made this app? We want it!',
   4:  'Just app stuff',
   5:  'I love this app!',
-  6:  'replace me',
-  7:  'replace me',
-  8:  'replace me',
-  9:  'replace me',
-  10: 'replace me'
+  6:  'I\'m hungry',
+  7:  'This show is awesome!',
+  8:  'So wow, so twist',
+  9:  'Wow ... Did that just happen?',
+  10: 'I love the chat'
 }
 
 function renderTweet(tweet) {
