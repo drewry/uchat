@@ -71,8 +71,8 @@ function renderChat(message, you) {
 
 // random chat response
 function randomChat() {
-  var random = Math.round(Math.random() * 3) + 1; // 1 in 3 chance of a response
-  var type   = Math.round(Math.random() * 10) + 1; // 1 in 10 responses
+  var random = Math.round(Math.random() * 5) + 1;
+  var type   = Math.round(Math.random() * 10) + 1;
 
   if(random == 1) {
     var message = {
